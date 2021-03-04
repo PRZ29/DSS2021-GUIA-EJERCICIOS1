@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de numeros</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Andika" />
+    <link rel="stylesheet" href="css/principal.css" />
+</head>
+
+<body background="img/fondo.jpg">
+    <section>
+        <article>
+            <form name="frmnumero" action="procesarlista.php" method="POST">
+                <fieldset>
+                    <legend><span>LISTA DE NUMEROS:</span></legend>
+                    <ul>
+                        <li><br>
+                            <label for="edad">Agrega los numeros que deseas:</label>
+                            <div class="campo">
+                                <input type="number" name="numero" id="numero"/>
+                                <input class="reset" type="reset" name="agregar" id="agregar" value="Agregar" /><br />                                
+                            </div>
+                        </li>
+                        <li><br><br>
+                            <label for="ingresados">Oprime y manten presionada la tecla control(Ctrl) y da click en cada numero que deseas ingresar:</label>
+                            <div class="campo"><br>
+                                <select name="ingresados[]" id="ingresados" size="8" multiple="multiple"></select>
+                            </div>
+                        </li>
+                        <li>
+                            
+                            <div class="campo"><br><br>
+                                <input type="submit" name="enviar" id="enviar" value="Ingresar numeros seleccionados" class="boton" />
+                                <br><br>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+<script src="js/agregar.js"></script>
+</html>

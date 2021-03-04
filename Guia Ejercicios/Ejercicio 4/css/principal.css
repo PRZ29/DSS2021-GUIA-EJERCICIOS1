@@ -1,0 +1,118 @@
+*              {
+   border:0;
+   padding:0;
+}
+
+html, body {
+   height: 100%;
+}
+
+
+fieldset             {
+   background-color:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+   border:6px ridge rgb(255, 255, 255);
+   -moz-border-radius:15px;
+   -webkit-border-radius:15px;
+   -o-border-radius:15px;
+   -ms-border-radius:15px;
+   border-radius:15px;
+   left:-23%;
+   margin-left:50%;
+   padding:16px 18px;
+   position:relative;
+   width:46%;
+}
+
+legend span          {
+   display:block;
+   border:3px ridge rgb(255, 255, 255);
+   background-color:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+   font:bold 1em "Century Gothic","Arial Rounded MT Bold",Helvetica,sans-serif;
+   color:rgb(255, 255, 255);
+   padding:2px 5px;
+}
+
+label                {
+   font:normal 1em "Arial Rounded MT Bold","Century Gothic",Helvetica,sans-serif;
+   color:rgb(30,60,100);
+   display:block;
+   float:left;
+   width:30%;
+   text-align:right;
+   padding-top:0.6em;
+   padding-bottom:0.6em;
+}
+
+.campo        {
+   display:block;
+   float:right;
+   font:Normal 0.9em "Century Gothic","Arial Rounded MT Bold",Helvetica,sans-serif;
+   position:relative;
+   width:68%;
+}
+
+input[type="text"] {
+   color: Navy;
+   font: Normal 1em 'Oswald',Arial,Helvetica,'Liberation Sans';
+   line-height: 1.4em;
+   height: 1.4em;
+   width: 40%;
+}
+
+select {
+   color: Navy;
+   font: Normal 1em 'Oswald',Arial,Helvetica,'Liberation Sans';
+   line-height: 1.4em;
+   width:44%;
+}
+
+
+
+.boton, .reset           {
+   /* Colocar relleno al contenido del botón */
+   padding: 4px 20px;
+   cursor:pointer;
+   /* Poner efecto de gradiente para el color de fondo del botón */
+   /* Para navegadores antiguos que no soportan gradientes colocar un color sólido */
+   background-color:#6b6dbb;
+   background: -webkit-gradient(linear, left top, left bottom, from(#88add7), to(#6b6dbb));
+   background: -webkit-linear-gradient(top, #88add7, #6b6dbb);
+   background: -moz-linear-gradient(top, #88add7, #6b6dbb);
+   background: -o-linear-gradient(top, #88add7, #6b6dbb);
+   background: linear-gradient(top, #88add7, #6b6dbb);
+   border:2px outset #dad9d8;
+   /* Estilos para el texto */
+   font-family:Andika, Arial, sans-serif;
+   font-size:1.1em;
+   letter-spacing:0.05em;
+   color:#fff;
+   text-shadow: 0px 1px 10px #000;
+
+   /* Agregar efecto de sombra al botón */
+   -webkit-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   -moz-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   -o-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   -ms-box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+   box-shadow: rgba(0, 0, 0, .55) 0 1px 6px;
+}
+
+.boton:hover,
+.boton:focus {
+   border:2px solid #dad9d8;
+}
+
+.reset:hover,
+.reset:focus {
+   border:2px solid #dad9d8;
+}
+
+ul                   {
+   list-style-type:none;
+   margin:0;
+   padding:0;
+}
+
+li                   {
+   line-height:2.1em;
+   display:block;
+}

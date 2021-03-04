@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calcular Circuito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Script de jquery para mostrar div en base a opcion seleccionada-->
+    <script>
+        $(document).ready(function() {
+            $(".div_content").hide();
+            $("#DivContent:first").show();
+            $("#select").change(function() {
+                $('.div_content').hide();
+                $('#' + $(this).val()).show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="select-style">
+        <select id="select">
+            <option hidden disabled selected value="option1"> -- Seleccionar Opción -- </option>
+            <option value="option2">Calcular Circuito de Capacitadores</option>
+            <option value="option3">Calcular Circuito de Resistencias</option>
+        </select>
+    </div><br>
+
+    <div id="DivContent">
+        <div id="option2" class="div_content">
+            <form method="POST" action="resultado.php">
+                <label>Ingresar valor de Capacitador uno en microfaradios (μF)</label><br>
+                <input type="number" id="cap1" name="cap1" required><br><br>
+                <label>Ingresar valor de Capacitador dos en microfaradios (μF)</label><br>
+                <input type="number" id="cap2" name="cap2" required><br><br>
+                <div class="select-style">
+                    <select name="selectCap">
+                        <option value="serie" name="serie">En Serie</option>
+                        <option value="paralelo" name="paralelo">En Paralelo</option>
+                    </select>
+                </div><br>
+                <input type="submit" name="enviar" id="enviar" value="Enviar" class="boton" />
+            </form>
+        </div>
+        <div id="option3" class="div_content">
+            <form method="POST" action="resultado.php">
+                <label>Ingresar valor de resistencia uno en kiloohmios (kΩ)</label><br>
+                <input type="number" id="res1" name="res1" required><br><br>
+                <label>Ingresar valor de resistencia dos en kiloohmios (kΩ)</label><br>
+                <input type="number" id="res2" name="res2" required><br><br>
+                <div class="select-style">
+                    <select name="selectRes">
+                        <option value="serie" name="serie">En Serie</option>
+                        <option value="paralelo" name="paralelo">En Paralelo</option>
+                    </select>
+                </div><br>
+                <input type="submit" name="enviar" id="enviar" value="Enviar" class="boton" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".floatNumberField").change(function() {
+                $(this).val(parseFloat($(this).val()).toFixed(2));
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form action="resultado.php" method="POST">
+        <div class="row">
+            <div class="column">
+                <h1>Agencia Perisur</h1>
+                <label>Trimestre 1:</label><br>
+                <input type="number" id="perisur1" name="perisur1" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 2:</label><br>
+                <input type="number" id="perisur2" name="perisur2" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 3:</label><br>
+                <input type="number" id="perisur3" name="perisur3" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 4:</label><br>
+                <input type="number" id="perisur4" name="perisur4" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+
+            </div>
+            <div class="column">
+                <h1>Agencia Valle</h1>
+                <label>Trimestre 1:</label><br>
+                <input type="number" id="valle1" name="valle1" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 2:</label><br>
+                <input type="number" id="valle2" name="valle2" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 3:</label><br>
+                <input type="number" id="valle3" name="valle3" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 4:</label><br>
+                <input type="number" id="valle4" name="valle4" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+
+
+            </div>
+            <div class="column">
+                <h1>Agencia Lomas</h1>
+                <label>Trimestre 1:</label><br>
+                <input type="number" id="lomas1" name="lomas1" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 2:</label><br>
+                <input type="number" id="lomas2" name="lomas2" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 3:</label><br>
+                <input type="number" id="lomas3" name="lomas3" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+                <label>Trimestre 4:</label><br>
+                <input type="number" id="lomas4" name="lomas4" required oninput="this.value = 
+                !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" class="floatNumberField" value="0.00" placeholder="0.00" step="0.01"><br>
+
+            </div>
+        </div>
+
+        <input type="submit" name="enviar" id="enviar" value="Enviar" class="boton" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    background: black;
+}
+
+.select-style {
+    border: 1px solid black;
+    width: 50%;
+    border-radius: 3px;
+    overflow: hidden;
+    background: lemonchiffon;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+div {
+    width: 50%;
+    margin: auto;
+    background: #EEE8AA;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+    height: 25px;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    background: #98FB98;
+    padding: 5px;
+}
